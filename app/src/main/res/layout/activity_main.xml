@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:id="@+id/txtNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Semanal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtLunes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LUNES"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvLunes"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtMartes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MARTES"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMartes"
+                android:layout_gravity="center"
+                android:layout_width="130dp"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtMiercoles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MIERCOLES"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMiercoles"
+                android:layout_gravity="center"
+                android:layout_width="130dp"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtJueves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JUEVES"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvJueves"
+                android:layout_gravity="center"
+                android:layout_width="130dp"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtViernes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VIERNES"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvViernes"
+                android:layout_gravity="center"
+                android:layout_width="130dp"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/tfNombreComida"
+            android:hint="Ingresa el nombre de la comida"
+            app:boxStrokeErrorColor="#F81B02"
+            app:boxStrokeColor="@color/colorList"
+            android:textColorHint="@color/colorList"
+            app:hintTextColor="#fff"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtNombreComida"
+                android:layout_width="280dp"
+                android:textSize="15dp"
+                android:layout_height="50dp"
+                android:drawableStart="@drawable/dinner"
+                android:drawableLeft="@drawable/dinner"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/abel"
+                android:textStyle="bold"
+                android:textColor="#fff" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/tfDia"
+            android:hint="Inserta el dia"
+            app:boxStrokeErrorColor="#F81B02"
+            app:boxStrokeColor="@color/colorList"
+            android:textColorHint="@color/colorList"
+            app:hintTextColor="#fff"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtDia"
+                android:textSize="15dp"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:drawableStart="@drawable/dia"
+                android:drawableLeft="@drawable/dia"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/abel"
+                android:textStyle="bold"
+                android:textColor="#fff" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/tfCodigo"
+            android:hint="Ingresa tu codigo de Administrador"
+            app:boxStrokeErrorColor="#F81B02"
+            app:boxStrokeColor="@color/colorList"
+            android:textColorHint="@color/colorList"
+            app:hintTextColor="#fff"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="140dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtCodigo"
+                android:textSize="15dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:drawableStart="@drawable/code"
+                android:drawableLeft="@drawable/code"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/abel"
+                android:textStyle="bold"
+                android:textColor="#fff" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnañadirComida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AÑADIR"
+            android:backgroundTint="@color/colorList"
+            android:textColor="#fff"
+            android:transitionName="buttonTrans"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="15dp"
+            app:cornerRadius="25dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
